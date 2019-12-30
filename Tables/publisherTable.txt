@@ -1,0 +1,15 @@
+DROP TABLE PUBLISHER CASCADE CONSTRAINTS;
+
+CREATE TABLE publisher(
+p_id int,
+name varchar2(30),
+phone varchar2(30),
+email varchar2(30),
+PRIMARY KEY(p_id)
+);
+
+insert into publisher (p_id, name, phone, email) values (1, 'Asaduzzaman', '01912235465', 'asad@gmail.com');
+insert into publisher (p_id, name, phone, email) values (2, 'Ahaduzzaman', '01711235465', 'ahaduzzaman@gmail.com');
+insert into publisher (p_id, name, phone, email) values (3, 'Samsuzzaman', '01812235335', 'samsu@gmail.com');
+insert into publisher (p_id, name, phone, email) values (4, 'Mohammad', '01812235335', 'mohammad@gmail.com');
+insert into publisher (p_id, name, phone, email) values (5, 'Rasid', '01812235335', 'rashid@gmail.com');

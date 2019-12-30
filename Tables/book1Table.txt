@@ -1,0 +1,17 @@
+DROP TABLE BOOK1 CASCADE CONSTRAINTS;
+
+CREATE TABLE book1( 
+b_id int,
+name varchar2(30),
+p_id int,
+availability int,
+genre varchar2(30),
+PRIMARY KEY(b_id),
+FOREIGN KEY(p_id) REFERENCES publisher(p_id)
+);
+
+insert into book1 (b_id, name, availability, genre, p_id) values (1, 'Database', 5, 'Education', 1);
+insert into book1 (b_id, name, availability, genre, p_id) values (2, 'Distributed Database', 7,'Education', 1);
+insert into book1 (b_id, name, availability, genre,  p_id) values (3, 'Compiler', 9, 'Education', 2);
+insert into book1 (b_id, name, availability, genre, p_id) values (4, 'Networking', 15,'Education', 3);
+insert into book1 (b_id, name, availability, genre, p_id) values (5, 'Networking', 15, 'Education', 3);

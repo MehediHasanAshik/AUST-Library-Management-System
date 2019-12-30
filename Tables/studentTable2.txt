@@ -1,0 +1,14 @@
+DROP TABLE STUDENT2 CASCADE CONSTRAINTS;
+
+CREATE TABLE student2( 
+s_id int, 
+name varchar2(10),
+department varchar2(10),
+email varchar2(20),
+password varchar2(5), 
+city varchar2(10),
+PRIMARY KEY(s_id)
+);
+
+insert into student2 (s_id, name, department, city, email, password) values (11, 'Akash', 'CSE', 'Dhanmondi', 'akash@gmail.com', 'abcd');
+insert into student2 (s_id, name, department, city, email, password) values (4, 'Mila', 'ME', 'Dhanmondi', 'mila@gmail.com', 'abcd');

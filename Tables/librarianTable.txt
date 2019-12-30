@@ -1,0 +1,12 @@
+DROP TABLE LIBRARIAN CASCADE CONSTRAINTS;
+
+CREATE TABLE librarian(
+l_id int,
+name varchar2(30),
+password varchar2(30),
+PRIMARY KEY(l_id)
+);
+
+insert into librarian (l_id, name, password) values (1, 'Mim', 'abcd');
+insert into librarian (l_id, name, password) values (2, 'Zarin', 'abcd');
+insert into librarian (l_id, name, password) values (3, 'Taief', 'abcd');

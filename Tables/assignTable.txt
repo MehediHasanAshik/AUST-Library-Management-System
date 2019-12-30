@@ -1,0 +1,16 @@
+DROP TABLE ASSIGN CASCADE CONSTRAINTS;
+
+CREATE TABLE assign(
+b_id int,
+s_id int,
+l_id int,
+ass_date varchar(12),
+ret_date varchar(12),
+FOREIGN KEY(b_id) REFERENCES book(b_id),
+FOREIGN KEY(s_id) REFERENCES student(s_id),
+FOREIGN KEY(l_id) REFERENCES librarian(l_id)
+);
+
+insert into assign (ass_date, ret_date, b_id, s_id, l_id) values ('8 July', '12 July', 1, 17, 2);
+insert into assign (ass_date, ret_date, b_id, s_id, l_id) values ('18 June', '22 June', 2, 8, 1);
+insert into assign (ass_date, ret_date, b_id, s_id, l_id) values ('1 Jan', '17 Jan', 3, 19, 3);
